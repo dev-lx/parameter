@@ -13,7 +13,7 @@ pipeline {
 }
          stage('clone'){
               steps{
-                 git branch: '${params.name}',
+                 git branch: "${params.name}",
                  credentialsId: 'master-jenkins',
                  url: 'git@github.com:dev-lx/parameter.git'
 
