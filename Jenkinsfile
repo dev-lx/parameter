@@ -14,7 +14,6 @@ pipeline {
          stage('clone'){
               steps{
                  git branch: "${params.branch_Name}"
-                 credentialsId: 'test'
                  url: 'https://github.com/dev-lx/parameter.git'
 
 }
