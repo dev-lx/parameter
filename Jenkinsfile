@@ -13,7 +13,7 @@ pipeline {
 }
          stage('clone'){
               steps{
-                 git branch: "${params.branch_Name}"
+                 git branch: "${params.name}"
                  url: 'https://github.com/dev-lx/parameter.git'
 
 }
